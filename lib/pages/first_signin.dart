@@ -22,9 +22,60 @@ class FirstSignin extends StatelessWidget {
             Text(
               'Welcome Back. \nLes`t make money',
               style: GoogleFonts.poppins(
-                  color: Colors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.w600),
+                color: Colors.white,
+                fontSize: 24,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            const SizedBox(
+              height: 70,
+            ),
+            TextFormField(
+              style: GoogleFonts.openSans(color: Colors.white),
+              decoration: InputDecoration(
+                fillColor: const Color(0xff262A34),
+                filled: true,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(17),
+                ),
+                hintText: 'Email',
+                hintStyle: GoogleFonts.openSans(
+                  color: const Color(0xff6f7075),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            TextFormField(
+              style: GoogleFonts.openSans(color: Colors.white),
+              decoration: InputDecoration(
+                fillColor: const Color(0xff262A34),
+                filled: true,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(17),
+                ),
+                hintText: 'Email',
+                hintStyle: GoogleFonts.openSans(
+                  color: const Color(0xff6f7075),
+                ),
+                suffixIcon: const Icon(
+                  Icons.visibility,
+                  color: Color(0xff6f7075),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            Container(
+              alignment: const Alignment(1, 0.5),
+              child: Text(
+                'Forgot My Password',
+                style: GoogleFonts.poppins(
+                  color: const Color(0xff6a6b70),
+                ),
+              ),
             ),
           ],
         ),
