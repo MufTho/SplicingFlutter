@@ -86,9 +86,10 @@ class FirstSignin extends StatelessWidget {
                 height: 55,
                 child: TextButton(
                   style: TextButton.styleFrom(
-                      backgroundColor: const Color(0xffFCAC15),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(17))),
+                    backgroundColor: const Color(0xffFCAC15),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(17)),
+                  ),
                   onPressed: () {},
                   child: Text(
                     'Sign In',
