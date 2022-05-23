@@ -48,6 +48,7 @@ class FirstSignin extends StatelessWidget {
               height: 20,
             ),
             TextFormField(
+              obscureText: true,
               style: GoogleFonts.openSans(color: Colors.white),
               decoration: InputDecoration(
                 fillColor: const Color(0xff262A34),
@@ -55,7 +56,7 @@ class FirstSignin extends StatelessWidget {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(17),
                 ),
-                hintText: 'Email',
+                hintText: 'Password',
                 hintStyle: GoogleFonts.openSans(
                   color: const Color(0xff6f7075),
                 ),
@@ -75,6 +76,48 @@ class FirstSignin extends StatelessWidget {
                 style: GoogleFonts.poppins(
                   color: const Color(0xff6a6b70),
                 ),
+              ),
+            ),
+            // Container for button bottom
+            const SizedBox(height: 117),
+            Center(
+              child: Container(
+                width: 295,
+                height: 55,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: const Color(0xffFCAC15),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(17))),
+                  onPressed: () {},
+                  child: Text(
+                    'Sign In',
+                    style: GoogleFonts.openSans(
+                      color: const Color(0xff6B4909),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 70.0, top: 30),
+              child: Row(
+                children: [
+                  Text(
+                    "Don't have account?",
+                    style: GoogleFonts.poppins(color: Colors.white),
+                  ),
+                  const SizedBox(width: 5),
+                  Text(
+                    "Sign Up?",
+                    style: GoogleFonts.poppins(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        decoration: TextDecoration.underline),
+                  ),
+                ],
               ),
             ),
           ],
