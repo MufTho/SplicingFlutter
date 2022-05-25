@@ -35,7 +35,7 @@ class FirstStarted extends StatelessWidget {
             child: Image.asset('assets/purple_btn.png'),
           ),
         ],
-      ),
+      ), 
     );
   }
 }
