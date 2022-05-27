@@ -14,16 +14,16 @@ class _FirstPricingState extends State<FirstPricing> {
   Widget build(BuildContext context) {
     Widget header() {
       return Padding(
-        padding: const EdgeInsets.only(top: 100, left: 30, right: 30),
+        padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
         child: Column(
           children: [
             Center(
               child: Image.asset(
-                'assets/crwon.png',
+                'assets/crown.png',
                 width: 100,
               ),
             ),
-            const SizedBox(height: 48),
+            const SizedBox(height: 25),
             Text(
               'Which one you wish \nto Upgrade',
               style: GoogleFonts.poppins(
@@ -107,7 +107,7 @@ class _FirstPricingState extends State<FirstPricing> {
                 Padding(
                   padding: const EdgeInsets.only(left: 41, top: 10),
                   child: selectedIndex == index
-                      ? Image.asset('purple_check.png', width: 26)
+                      ? Image.asset('assets/purple_check.png', width: 26)
                       : const SizedBox(width: 26),
                 ),
               ],
@@ -118,20 +118,48 @@ class _FirstPricingState extends State<FirstPricing> {
     }
 
     return Scaffold(
-        backgroundColor: Colors.white,
-        body: Column(
-          children: [
-            header(),
-            const SizedBox(height: 20),
-            option(0, 'assets/pig_icon.png', 'Money Security', 'support',
-                '24 / 7'),
-            const SizedBox(height: 5),
-            option(1, 'assets/paper_illustration.png', 'Automation',
-                'we provide', 'invoce'),
-            const SizedBox(height: 5),
-            option(2, 'assets/dollar_icon.png', 'Balance Report', 'can up to',
-                '10k'),
-          ],
-        ));
+      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          header(),
+          const SizedBox(height: 20),
+          option(
+              0, 'assets/pig_icon.png', 'Money Security', 'support', '24 / 7'),
+          const SizedBox(height: 5),
+          option(1, 'assets/paper_illustration.png', 'Automation', 'we provide',
+              'invoce'),
+          const SizedBox(height: 5),
+          option(2, 'assets/dollar_icon.png', 'Balance Report', 'can up to',
+              '10k'),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: const Color(0xff6050E7),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 10.0, left: 30),
+              child: Text(
+                'upgrade',
+                style: GoogleFonts.poppins(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 10, left: 30),
+              child: Image.asset('assets/right_arrow.png', width: 24),
+            ),
+            label: '',
+          ),
+        ],
+      ),
+    );
   }
 }

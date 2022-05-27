@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sevenday/pages/first_started.dart';
+import 'package:sevenday/pages/first_pricing.dart';
+import 'package:sevenday/pages/first_random.dart';
 
 void main() {
   runApp(const Sevenday());
@@ -12,7 +13,7 @@ class Sevenday extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstStarted(),
+      home: FirstRandom(),
     );
   }
 }
