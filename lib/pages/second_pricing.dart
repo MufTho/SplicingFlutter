@@ -44,6 +44,102 @@ class SecondPricing extends StatelessWidget {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(top: 51, left: 28),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Image.asset('assets/orange_check.png', width: 26),
+                    const SizedBox(width: 12),
+                    Text(
+                      'Unlock Our Top Charts',
+                      style: GoogleFonts.poppins(
+                          color: Colors.white, fontSize: 16),
+                    )
+                  ],
+                ),
+                const SizedBox(height: 26),
+                Row(
+                  children: [
+                    Image.asset('assets/orange_check.png', width: 26),
+                    const SizedBox(width: 12),
+                    Text(
+                      'Save More Then 1000 Docs',
+                      style: GoogleFonts.poppins(
+                          color: Colors.white, fontSize: 16),
+                    )
+                  ],
+                ),
+                const SizedBox(height: 26),
+                Row(
+                  children: [
+                    Image.asset('assets/orange_check.png', width: 26),
+                    const SizedBox(width: 12),
+                    Text(
+                      '24/7 Customer Support',
+                      style: GoogleFonts.poppins(
+                          color: Colors.white, fontSize: 16),
+                    )
+                  ],
+                ),
+                const SizedBox(height: 26),
+                Row(
+                  children: [
+                    Image.asset('assets/orange_check.png', width: 26),
+                    const SizedBox(width: 12),
+                    Text(
+                      "Track Company's Spending",
+                      style: GoogleFonts.poppins(
+                          color: Colors.white, fontSize: 16),
+                    )
+                  ],
+                ),
+                const SizedBox(height: 58),
+                Container(
+                  width: 315,
+                  height: 55,
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      shadowColor: const Color(0xffE57C73),
+                      elevation: 20,
+                      backgroundColor: const Color(0xffE57C73),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(31),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 70, right: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Subcribe Now',
+                            style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Image.asset('assets/button_arrow.png')
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Text(
+                  'Contact Support',
+                  style: GoogleFonts.poppins(
+                    color: Colors.white,
+                    fontSize: 16,
+                    decoration: TextDecoration.underline,
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
